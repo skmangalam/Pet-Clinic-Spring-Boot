@@ -2,15 +2,8 @@ package com.skmangalam.petclinic.services;
 
 import com.skmangalam.petclinic.model.Owner;
 
-import java.util.Set;
-
-public interface OwnerService {
-
-    Owner findById(Long id);
-
-    Owner save(Owner owner);
+public interface OwnerService extends CrudService<Owner, Long>{
 
     Owner findByLastName(String lastName);
 
-    Set<Owner> findAll();
 }
